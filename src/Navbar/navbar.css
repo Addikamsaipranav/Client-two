@@ -124,6 +124,7 @@ a {
   justify-content: space-around;
   gap: 1.5rem;
   color: black;
+  margin-top: 1%;
 }
 .nav__toggler {
   display:none;

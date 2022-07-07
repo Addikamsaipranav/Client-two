@@ -1,0 +1,40 @@
+.services{
+    margin-top: 0.1%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+    background: linear-gradient(90deg,#0e3959 0%,#fff 95%, ghostwhite 100%) transparent;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.sercicerow{
+    padding: 20px;
+    margin-left: 3%;
+    margin-right: 6%;
+    margin-top: 5%;
+
+}
+.servicescol{
+    padding: 20px 20px 20px 20px;
+}
+.servicescol p{
+    text-align: center;
+    margin-top: 2%;
+    font-size: larger;
+    color: white;
+}
+.icon{
+    font-size: 40px;
+    margin: 0 auto;
+    padding-left:20px;
+    padding-top: 6px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.servicescol:hover{
+    box-shadow: 5px 5px 5px 5px black;
+    cursor: pointer;
+    transition: 1s;
+}
