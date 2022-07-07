@@ -1,0 +1,165 @@
+.full{
+    margin-left: 3%;
+}
+.contact{
+    margin-top: 0.1%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+    background: linear-gradient(90deg,#0e3959 0%,#fff 50%, #000 50%,#fff 100%) transparent;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.contactrow{
+    margin-top: 3%;
+    overflow-x: hidden;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.contactcol1{
+   border: 1px solid black;
+   background-color: white;
+   box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+   border-radius: 5px;
+   height: 550px;
+   padding: 40px;
+   width: 50%;
+}
+.contactcol2{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+    height: 550px;
+    padding: 40px;
+    padding-left: 60px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 0.1%;
+}
+.contactcol1heading{
+    margin-top: 2%;
+    font-size: x-large;
+    font-weight: 600;
+}
+.contactform{
+    margin-top: 4%;
+    
+}
+.formrow{
+    margin-top: 2%;
+}
+.input{
+    
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+::-webkit-input-placeholder {
+    
+    font-size: 15px;
+ }
+ .inputtextarea{
+    border: 1px solid black;
+    border-radius: 6px;
+ }
+ .button {
+    width: 40%;
+    overflow: hidden;
+    background-color:#162447;
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color: white;
+    border: 1px solid #162447;
+    font-weight: 600 ;
+    color: black;
+    transition: 0.8s;
+    overflow: hidden;
+  }
+  .contactcol2row1{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color:#0e3959 ;
+    width:100%;
+   
+    height: 430px;
+    padding: 20px;
+    color: white;
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+  }
+ .contactcol2row1 .info{
+    margin-left: 5%;
+    margin-top: 2%;
+    
+ }
+  table{
+    margin-left: 7%;
+    width:100%;
+    margin-top: 3%;
+    
+    overflow: hidden;
+    }
+    .icons{
+      width:10%;
+      font-size: larger;
+      overflow: hidden;
+    }
+  .virtualtable{
+    font-size: large;
+    font-weight: 600;
+    overflow: hidden;
+  }
+  .map{
+    margin-left: 6%;
+    margin-right: 14.7%;
+  }
+  .info{
+    margin-left: 4%;
+  }
+  .emaill{
+    text-decoration: none;
+    color: white;
+  }
+ 
+  @media screen and (max-width: 851px){
+    .contactrow{
+        margin-top: 5%;
+       
+        margin-left: 6%;
+        margin-right: 6%;
+        padding: 5px 5px 5px 5px;
+    }
+    .contactcol1{
+        border: 1px solid black;
+        background-color: white;
+        box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+        border-radius: 5px;
+        height: 450px;
+        padding: 20px;
+        width: 100%;
+     }
+     .contactcol2{
+        border: 1px solid black;
+        background-color: white;
+        box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+        height: 500px;
+        padding: 5px 5px 5px 5px;
+        width: 100%;
+        margin-top: 2%;
+    }
+    .map{
+        margin-right: 5.7%;
+    }
+    .contactcol2row1{
+        margin-left: 0.5%;
+    }
+    
+  }
