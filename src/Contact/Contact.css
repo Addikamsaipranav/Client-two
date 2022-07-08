@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 2%;
-    background: linear-gradient(90deg,#0e3959 0%,#fff 50%, #000 50%,#fff 100%) transparent;
+    background: linear-gradient(90deg,#0e3959 0%,#fff 85%, ghostwhite 100%) transparent;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -16,6 +16,7 @@
     margin-left: 6%;
     margin-right: 6%;
     padding: 5px 5px 5px 5px;
+    overflow-y: hidden;
 }
 
 
@@ -132,7 +133,7 @@
   @media screen and (max-width: 851px){
     .contactrow{
         margin-top: 5%;
-       
+       overflow: hidden;
         margin-left: 6%;
         margin-right: 6%;
         padding: 5px 5px 5px 5px;

@@ -29,7 +29,7 @@ function Navbar() {
    <nav className="nav a navposition" >
   <Link to="/home" className="nav__brand">
   
-    <h2><span>P</span>rudence</h2>
+    <h2><span>C</span>SD & CO</h2>
   </Link>
    <ul className={active} 
    onClick={()=>{

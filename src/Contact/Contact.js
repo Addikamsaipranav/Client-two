@@ -2,12 +2,12 @@ import react,{useState,useEffect,useRef} from "react";
 import "../Contact/Contact.css"
 import {Form,Button, Container} from 'react-bootstrap';
 import {Row,Col,Table} from  "react-bootstrap"
-
+import Contact1 from  "../images/contact.jpg"
 import {SiGooglemaps } from "react-icons/si";
 import { FiUsers ,FiPhone } from "react-icons/fi";
 import {HiOutlineMail} from "react-icons/hi"
-
-
+import Aos from "aos";
+import "aos/dist/aos.css"
 const Contact=()=>{
   
  
@@ -19,7 +19,7 @@ const Contact=()=>{
           
           <Row className="contactrow">
           
-          <Col className="contactcol1" lg={6} md={6} sm={12}>
+          <Col data-aos="fade-down" className="contactcol1" lg={6} md={6} sm={12}>
             <h1 className="contactcol1heading">Send a message</h1>
                <Form className="contactform">
                 
@@ -58,8 +58,9 @@ const Contact=()=>{
                 </Form>
           </Col>
 
-          <Col className="contactcol2" lg={6} md={6} sm={12}>
-        <Row className="contactcol2row1">
+          <Col data-aos="fade-left" className="contactcol2" lg={6} md={6} sm={12}>
+          
+        <Row  data-aos="fade-up" className="contactcol2row1">
         
         <div className="info">
         <h1> Let's Get in touch</h1>
