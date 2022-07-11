@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "../Navbar/navbar.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "../Home";
-import About from "../About";
+import About from "../Aboutus/About";
 import Service from "../Services/Service";
 import Contact from "../Contact/Contact"
+import VirtualCfo from "../ServicesList/VirtualCfo";
 
 function Navbar() {
   
@@ -27,7 +28,7 @@ function Navbar() {
       
    <Router>
    <nav className="nav a navposition" >
-  <Link to="/home" className="nav__brand">
+  <Link to="/" className="nav__brand">
   
     <h2><span>C</span>SD & CO</h2>
   </Link>
@@ -41,7 +42,7 @@ function Navbar() {
    >
 
      <li className="nav__item">
-     <Link to="/home" className="nav__link "> Home</Link>
+     <Link to="/" className="nav__link "> Home</Link>
      </li>
      
      <li className="nav__item">
@@ -69,10 +70,11 @@ function Navbar() {
  <Routes>
     
        
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/virtualcfo" element={<VirtualCfo/>}/>
       </Routes>
    </Router>
   );

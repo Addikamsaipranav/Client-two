@@ -65,6 +65,8 @@ body {
 }
 ul li {
   margin-right: -80%;
+  z-index: 8;
+  margin-top: 0 auto;
 }
 
 li {
@@ -86,7 +88,7 @@ a {
   width: 0;
   left: 0;
   bottom: -10px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .a a:hover:after{
     
@@ -94,20 +96,22 @@ a {
 }
 .a a:hover{
   
+  
   color: crimson;
     transition: 0.5s;
 }
 
 .nav {
+  margin-top: 0.1%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 10vh;
+  height: 9vh;
   background:ghostwhite;
   opacity: 0.9;
   color: black;
- 
+
   border: 1px solid silver;
 }
 
@@ -173,7 +177,8 @@ a {
     right: 0;
     height: auto;
     width: 100vw;
-    background: white;
+    background-color: white;
+    
     color: black;
     flex-direction: column;
     transform: translateX(100%);
