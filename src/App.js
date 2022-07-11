@@ -28,7 +28,7 @@ function App() {
        color={"black"} loading={loading}  size={10} />
       </div>
       :
-    <Navbar/>
+      <Navbar/>
     }
        
     </div>

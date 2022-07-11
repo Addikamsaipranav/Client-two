@@ -27,7 +27,7 @@ function Navbar() {
   return (
       
    <Router>
-   <nav className="nav a navposition" >
+   <nav className="nav a navposition navbar" >
   <Link to="/" className="nav__brand">
   
     <h2><span>C</span>SD & CO</h2>

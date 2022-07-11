@@ -132,6 +132,22 @@ function Testing() {
     
     
     </Container>
+
+    <Container className='kkk'>
+    
+    <Row className='desktop'>
+    <Col>
+        desktop and tab view
+    </Col>
+    
+    </Row>
+    <Row className='m'>
+    <Col >
+        mobile view
+    </Col>
+    </Row>
+    
+    </Container>
     </div>
   )
 }

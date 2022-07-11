@@ -1,9 +1,228 @@
 .containerstart{
-  border: 1px solid black;
-  padding-left: 16%;
-  padding-right: 15%;
+  
+  padding-left:10%;
+  padding-right: 10%;
   text-align: justify;
 }
-.containerstart Row{
+.landbutton{
+  width: auto;
+  height: auto;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0e3959;
+  color: white;
+  opacity: 1;
+  transition: 1s;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.landbutton:hover{
+  background-color: white;
+  color: black;
+  transition: 1s;
+  border: 2px solid black;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 80px 0;
+}
+.text{
+    margin-top:22%;
+    width: 100%;
+    margin-left: 10%;
+}
+.text p{
+    font-size: x-large;
+    color: #120643;
+    width:100%;
+}
+.text p span{
+    color: #f09053;
+}
+.text a{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #120643;
+    text-decoration: none;
+    padding: 18px 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.text a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #f09053;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+.text a:hover:after{
+    width: 100%;
+}
+
+.img{
+    position: relative;
+    width: 330px;
+    height: 330px;
+    background: radial-gradient(420px, #120643, transparent 50%);
+    margin-top:5%;
+    border-radius: 50%;
+    margin-left:20%;
+    margin-top: 10%;
+}
+.email-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:100px;
+    background-color: none;
+}
+
+.social-icons{
+    height: 100%;
+    animation: rotation 60s linear infinite;
+}
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.icon2{
+    position: absolute;
+    background-color: white;
+    margin: auto;
+    border: 2px solid white;
+    font-size: 30px;
+    height: 2em;
+    width: 2em;
+    color:#0e3959;
+    border: 1px solid black;
+    border-radius: 50%;
+     place-items: center;
+     display: grid;
+}
+.social-icon1{
+    top: 0;
+    left: 42%;
+}
+.social-icon2{
+    top: 25%;
+    right: 0;
+}
+.social-icon3{
+    top: 70%;
+    left: 70%;
+}
+.social-icon4{
+    top: 25%;
+    left: 0;
+}
+.social-icon5{
+    top: 70%;
+    left: 10%;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
 
 }
+.wave:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('..\\public\\images\\blue_wave.svg') repeat-x;
+    background-size: cover;
+    background-position: -1000px 0;
+    opacity: .2;
+    animation: waveOne 60s linear infinite;
+}
+@keyframes waveOne {
+    50%{
+        background-position: 0 0;
+    }
+}
+.wave:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('..\\public\\images\\blue_wave.svg') repeat-x;
+    background-size: cover;
+    background-position: 2732px 0;
+    opacity: .3;
+    animation: waveOne 120s linear infinite;
+}
+@media screen and (max-width:851px){
+.img{
+  position:relative;
+  margin-left:0;
+  width:300px;
+  height:300px;
+  background: radial-gradient(320px, #f08f538c, transparent 50%);
+
+}
+  .email-icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height:100px;
+  }
+ 
+  .social-icon1{
+      top: 0;
+      left: 42%;
+  }
+  .social-icon2 {
+      top: 25%;
+      right: 0;
+  }
+  .social-icon3 {
+      top: 70%;
+      left: 70%;
+  }
+  .social-icon4 {
+      top: 25%;
+      left: 0;
+  }
+  .social-icon5 {
+      top: 70%;
+      left: 10%;
+  }
+.text p{
+  font-size:16px;
+  line-height: 30px;
+}
+.text a{
+  margin-top:5%;
+}
+.wave img{margin-top:0;
+display:none;}
+}
+@media screen and (min-device-width: 720px) and (max-device-width: 1100px){
+  .wave::before{
+    background-position: -500px 0;
+  }
+}
+

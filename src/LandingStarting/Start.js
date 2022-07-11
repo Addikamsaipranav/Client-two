@@ -3,24 +3,36 @@ import "../LandingStarting/Start.css"
 import ss from "../images/Invoice.gif"
 import {Link} from "react-router-dom"
 import {Container,Col,Row} from "react-bootstrap"
+import { AiOutlineRise ,AiFillBank,AiFillCreditCard,AiFillCalendar,AiFillDatabase,AiFillDropboxSquare,AiFillGoogleCircle} from "react-icons/ai";
 function Start() {
   return (
     <div className='start'>
     <Container fluid className='containerstart'>
     <Row className="flex-column-reverse flex-md-row">
     <Col>
-       Col one text with button
+    <div data-aos="fade-up" class="text ">
+        <p>Financial Solutions to Advance your Business <span>corporis lobortis</span> quas nunc semper eius ullam ullam velit voluptas.</p>
+        <button className='landbutton'>Get Started</button>
+    </div>
     </Col>
     <Col>
-     rotating imagess
-    css will be there in start.css
+    <div data-aos="fade-down" class="img col-lg-6 col-md-12 col-sm-12">
+        <div class="social-icons">
+            <div data-aos="fade-up" className='icon2 social-icon1'><AiOutlineRise/></div>
+            <div data-aos="fade-left" className='icon2 social-icon2'><AiFillCreditCard/></div>
+            <div data-aos="fade-right" className='icon2 social-icon3'><AiFillBank/></div>
+            <div data-aos="fade-left" className='icon2 social-icon4'><AiFillCalendar/></div>
+            <div data-aos="fade-right" className='icon2 social-icon5'><AiOutlineRise/></div>
+        </div>
 
-    i will keep padding left and right for the Container such that it will get adjusted as per services and about in home page
-    you juz write code in these cols and pls use icons in place of logos ?
-    #Lets make the website animated bro
-    
+        <img  class="email-icon" src="images/mail-142.svg" alt=""/>
+    </div>
+    <div data-aos="fade-up" class="wave">
+        <img src="images/blue_wave.svg" alt=""/>
+    </div>
+
     </Col>
-    
+
     </Row>
     </Container>
     </div>

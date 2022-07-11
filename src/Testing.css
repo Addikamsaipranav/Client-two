@@ -1,8 +1,25 @@
 .mobile{
     visibility: hidden;
 }
-
-@media screen and (max-width: 851px){
+.m{
+    visibility: hidden;
+}
+.desktop{
+    visibility: visible;
+}
+.kkk{
+    background-color: red;
+    color: white;
+}
+@media screen and (max-width: 700px){
+    .m{
+        visibility: visible;
+        margin-top: -1%;
+      
+    }
+    .desktop{
+        visibility: hidden;
+    }
     .mobile{
         visibility: visible;
     }
