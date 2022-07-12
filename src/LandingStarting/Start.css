@@ -1,8 +1,10 @@
 .containerstart{
-  
+  margin-top: 7%;
   padding-left:10%;
   padding-right: 10%;
   text-align: justify;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .landbutton{
   width: auto;
@@ -225,4 +227,3 @@ display:none;}
     background-position: -500px 0;
   }
 }
-

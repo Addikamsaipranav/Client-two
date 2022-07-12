@@ -6,7 +6,7 @@ import { AiOutlineRise ,AiFillBank,AiFillCreditCard,AiFillCalendar,AiFillDatabas
 import "../src/Services/Services.css"
 import {Container,Row,Col, Button} from "react-bootstrap";
 import List from './LandingCompnayList/List';
-import Slide from 'react-reveal/Slide';
+
 import Start from './LandingStarting/Start';
 import Footer from "../src/Footer/Footer"
 function Home() {

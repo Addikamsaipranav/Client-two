@@ -27,7 +27,7 @@ function Navbar() {
   return (
       
    <Router>
-   <nav className="nav a navposition navbar" >
+   <nav className="nav a navposition" >
   <Link to="/" className="nav__brand">
   
     <h2><span>C</span>SD & CO</h2>
@@ -49,12 +49,12 @@ function Navbar() {
      <Link to="/about" className="nav__link"> About </Link>
      </li>
 
-     <li className="nav__item">  
-      <Link to="/services" className="nav__link">Services</Link>
-      </li>
-
-    
-
+     <li className="nav__item">
+     
+        
+     <Link to="/services" className="nav__link"> Services </Link>
+     
+     </li>
 
      <li className="nav__item">
      <Link to="/contact" className="nav__link"> Contact </Link>
@@ -70,12 +70,12 @@ function Navbar() {
  <Routes>
     
        
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/virtualcfo" element={<VirtualCfo/>}/>
-      </Routes>
+ <Route path="/" element={<Home />} />
+ <Route path="/about" element={<About />} />
+ <Route path="/services" element={<Service />} />
+ <Route path="/contact" element={<Contact/>} />
+ <Route path="/virtualcfo" element={<VirtualCfo/>}/>
+</Routes>
    </Router>
   );
 }

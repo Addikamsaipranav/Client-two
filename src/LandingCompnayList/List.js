@@ -9,42 +9,34 @@ import c5 from "../images/zoho.png"
 
 import {Container,Row,Col} from "react-bootstrap"
 function List() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 5000,
-        autoplaySpeed: 1000,
-        cssEase: "linear",
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+    responsive: [
+     
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <div>
     
@@ -91,6 +83,36 @@ function List() {
           <Col lg={2} md={2} sm={2}></Col>
           <Col lg={2} md={2} sm={2}></Col>
              </Row>
+        </div>
+        <div className='mobile'>
+        <Row>
+        <div className="sliderh ">
+      <h1 data-aos="fade-up-right">We work with all the top accounting technologies</h1>
+        <Slider className="slider" {...settings}>
+          <div >
+          <img  className="sliderimg"  data-aos="flip-left"  sm={12}  src={c1}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c2}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c3}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c4}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c1}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c5}></img>
+          </div>
+          <div>
+          <img className="sliderimg"  data-aos="flip-left"  sm={12}  src={c2}></img>
+          </div>
+        </Slider>
+      </div>
+        </Row>
         </div>
     </Container>
     

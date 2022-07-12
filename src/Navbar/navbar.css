@@ -3,7 +3,6 @@
 *::before {
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 html {
@@ -17,7 +16,7 @@ body {
 .nav__brand h2{
   
   position: relative;
-  margin: 0;
+  margin-left: 30px;
   font-size: 3rem;
   font-weight: 600;
   color: black;
@@ -26,7 +25,7 @@ body {
 }
 .nav__brand h2{
   position: relative;
-  margin: 0;
+  margin-left: 150px;
   font-size: 3rem;
   font-weight: 600;
   color: black;
@@ -34,13 +33,13 @@ body {
   overflow: hidden;
   
 }
-.nav__brand h2::before{
+h2::before{
   content: "";
   position: absolute;
   left: 120%;
   height: 120%;
   width: 120%;
-  background: linear-gradient(90deg,transparent 0%,ghostwhite,ghostwhite 100%);
+  background: ghostwhite;
   animation:  animate 5.5s linear infinite;
   animation-delay: 2s;
   transition: 0.3s;
@@ -61,12 +60,10 @@ body {
 
 
 .nav__brand h2 span{
-  color:crimson;
+  color:#ff022c;
 }
 ul li {
-  margin-right: -80%;
-  z-index: 8;
-  margin-top: 0 auto;
+  margin-right: -20%;
 }
 
 li {
@@ -88,7 +85,7 @@ a {
   width: 0;
   left: 0;
   bottom: -10px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .a a:hover:after{
     
@@ -96,25 +93,34 @@ a {
 }
 .a a:hover{
   
-  
   color: crimson;
     transition: 0.5s;
 }
 
 .nav {
-  margin-top: 0.1%;
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
+  z-index: 18;
   align-items: center;
   justify-content: space-around;
-  height: 9vh;
+  height: 10vh;
   background:ghostwhite;
-  opacity: 0.9;
   color: black;
-
+  
+ 
   border: 1px solid silver;
 }
-
+select{
+  background: rgb(0, 33, 65);
+  border: none;
+  color: black;
+}
+select:hover{
+   color: black;
+    transition: 0.5s;
+}
 .nav__brand {
   text-transform: uppercase;
   margin-left: -15%;
@@ -123,13 +129,10 @@ a {
 
 .nav__menu {
   
-  z-index: 15;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem;
-  color: black;
-  margin-top: 1%;
+  gap: 3rem;
 }
 .nav__toggler {
   display:none;
@@ -148,10 +151,16 @@ a {
 }
 
 @media screen and (max-width: 851px) {
-  
-  .nav__menu {
-    gap:3rem;
-   
+
+  .nav__brand h2{
+    position: relative;
+    margin-left: 0px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    z-index: 1;
+    overflow: hidden;
+    
   }
  
   .nav__toggler {
@@ -169,24 +178,24 @@ a {
     color: black;
   }
   ul{
-    z-index: 8;
+    z-index: 4;
   }
   ul li {
     margin-right:20%;
   }
   .nav__menu {
-   
     position: fixed;
     top: 9.5vh;
+    
     right: 0;
     height: auto;
     width: 100vw;
+    background:ghostwhite;
     color: black;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-   
-
+    padding-bottom: 2%;
   }
 }
 /* Active Class */
@@ -203,7 +212,7 @@ a {
   transform: rotate(-45deg) translate(-4px, 5px);
 }
 .toggle .line2 {
-  background-color: black;
+  background-color:black;
   color: black;
   opacity: 0;
 }
@@ -211,4 +220,18 @@ a {
   background-color: red;
   color: red;
   transform: rotate(45deg) translate(-4px, -5px);
+}
+@media only screen and (min-width: 912px) and (max-width:1100px){
+  .nav__brand{
+    margin-right: -90px;
+  }
+  .nav__menu{
+    margin-left: -50%;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width:653px){
+  .nav__brand{
+    margin-left: 10px;
+  }
 }
